@@ -1,0 +1,6 @@
+table,tr,th{
+    border: 1px,solid black;
+    margin:30px 30px;
+    padding:40px;
+    justify-content: center;
+}

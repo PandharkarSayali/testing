@@ -1,0 +1,42 @@
+{
+         "User1":{
+            "UserName":"Ada Lovelace",
+            "Email":"Ada@xyz.com",
+            "FirstName":" Ada",
+            "LastName":"Lovelace",
+            "Role":"Admin", 
+            "Actions":50,
+            "id":2
+         },
+ 
+         "User2":{
+            "UserName":"Grace Hopper",
+            "Email":"Grace@xyz.com",
+            "FirstName":" Grace",
+            "LastName":"LoveHopperlace",
+            "Role":"Developer", 
+            "Actions":94,
+            "id":1
+         },
+
+         "User3":{
+            "UserName":"Margarel Hamilton",
+            "Email":"AMargarelda@xyz.com",
+            "FirstName":" Margarel",
+            "LastName":"Hamilton",
+            "Role":"QA", 
+            "Actions":80,
+            "id":4
+         },
+
+         "User4":{
+            "UserName":"Joan Clarke",
+            "Email":"Joan@xyz.com",
+            "FirstName":" Joan",
+            "LastName":"Clarke",
+            "Role":"Manager", 
+            "Actions": null,
+            "id":3
+        }    
+}
+
