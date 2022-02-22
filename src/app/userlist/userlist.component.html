@@ -21,4 +21,42 @@
             </tr>
         </tbody>
     </table>
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div>
+            <h2>New User Details</h2>
+            <div class="form-control">
+                <div>
+                    <div>
+                        <input type="text"id="Username" placeholder="userName"  ngModel name="Username" required>
+                        <input type="email"id="email" placeholder="EmailId" ngModel name="Email" required email #email="ngModel">
+                        <span class="help block" *ngIf="!email.valid && email.touched" >Please Enter a Valid Email Address</span>
+                    </div>
+                    <div>
+                        <input type="text"id="FirstName" placeholder="FirstName" ngModel name="FirstName" required>
+                        <input type="text"id="Lastname" placeholder="LastName"  ngModel name="Lastname" required>
+                    
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="Submit" [disabled]="!f.valid">Submit</button>
+                            <select id="role" name="Roles">
+                                <option value disabled selected="Role">Role</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Developer">Developer</option>
+                                <option value="QA">QA</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="after-SubmitDisplay" *ngIf="submitted">
+            <h2>Data Submitted</h2>
+            <p>UserName={{username}}</p>
+            <p>EmailId={{email}}</p>
+            <p>FirstName={{firstname}}</p>
+            <p>LastName={{lastname}}</p>
+            <p>Role={{role}}</p>
+        </div>
+    </form>
 </div>

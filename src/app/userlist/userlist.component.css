@@ -1,6 +1,50 @@
 table,tr,th{
     border: 1px,solid black;
-    margin:30px 30px;
+    margin:70px 30px;
     padding:40px;
     justify-content: center;
 }
+
+.form-control{
+    width:50%;
+}
+
+
+#Username{
+margin-right:30px;
+margin-bottom:20px;
+width:40%;
+padding:5px;
+}
+
+#email{
+    margin:40px 30px;
+    width:40%;
+    padding:5px;
+}
+#FirstName{
+    margin-right:30px;
+    margin-bottom:20px;
+    width:40%;
+    padding:5px;
+}
+
+#Lastname{
+    margin:40px 30px;
+    width:40%;
+    padding:5px;
+}
+.btn btn-primary{
+margin: 5px;
+padding:10px;
+}
+
+#role{
+    margin: 10px;
+    padding:6px;
+}
+
+input.ng-invalid.ng-touched{
+    border :1px solid red;
+}
+
