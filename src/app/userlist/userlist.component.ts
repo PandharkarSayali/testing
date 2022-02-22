@@ -11,11 +11,8 @@ export class Data{
        public Role:string, 
        public Actions:Number=null,
        public id:Number )
-       {
-
-       }
+       {}
 }
-
 
 @Component({
   selector: 'app-userlist',
@@ -24,6 +21,7 @@ export class Data{
 })
 export class UserlistComponent implements OnInit {
   data:Data[];
+  form: any;
    
   constructor(private http:HttpClient) { }
   
@@ -39,7 +37,6 @@ export class UserlistComponent implements OnInit {
     actions:null;
     submitted=false;
 
-
   onSubmit(form:NgForm){
     console.log("response", form);
     this.submitted=true;
@@ -48,8 +45,7 @@ export class UserlistComponent implements OnInit {
     this.firstname=form.value.FirstName;
     this.lastname=form.value.Lastname;
     this.role=form.value.Roles;
-
-   // this.UserName=Data.UserName;
+    // this.UserName=Data.UserName;
   }
   
   getAPIList(){
@@ -57,9 +53,6 @@ export class UserlistComponent implements OnInit {
       response => {
         console.log(response);
         this.data = response;
-      }
-    );
-  }
-
-   
+      });
+  }  
 }
