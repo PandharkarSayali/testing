@@ -28,6 +28,7 @@ export class UserlistComponent implements OnInit {
 
   ngOnInit(): void {
     //this.getAPIList();
+    console.log('1');
   }
 
   
