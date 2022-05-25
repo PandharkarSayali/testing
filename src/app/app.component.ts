@@ -21,6 +21,6 @@ export class AppComponent implements OnInit{
     constructor(private dataService:DataService ) {}
 
     ngOnInit(){
-     
+     console.log("abc");
     }
 }
