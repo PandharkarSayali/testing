@@ -21,16 +21,6 @@ export class AppComponent implements OnInit{
     constructor(private dataService:DataService ) {}
 
     ngOnInit(){
-      /*this.dataService.getAPIList().subscribe((res:any)=>{
-        console.log('response is ', res)
-    },(err) => {
-        console.log('error is ', err)
-    })
-
-        this.dataService.postAPIData().subscribe((res:any)=>{
-          console.log('response from post data is ', res);
-        },(err)=>{
-          console.log('error during post is ', err)
-      })*/
+      console.log("123");
     }
 }
