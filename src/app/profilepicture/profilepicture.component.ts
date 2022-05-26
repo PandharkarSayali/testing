@@ -11,7 +11,6 @@ export class ProfilepictureComponent implements OnInit {
 
   ngOnInit(): void {
 
-console.log('1');
   }
 
 }
