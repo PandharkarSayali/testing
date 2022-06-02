@@ -21,6 +21,6 @@ export class HeaderComponent implements OnInit {
     console.log("abc");
     console.log("123");
      console.log("abc");
-        console.log("123");
+     
   }
 }
