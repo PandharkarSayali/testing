@@ -18,5 +18,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    cosole.log("abc");
+    cosnole.log("123");
   }
 }
