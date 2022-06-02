@@ -21,6 +21,6 @@ export class HeaderComponent implements OnInit {
     cosole.log("abc");
     cosnole.log("123");
      cosole.log("abc");
-    cosnole.log("123");
+    
   }
 }
