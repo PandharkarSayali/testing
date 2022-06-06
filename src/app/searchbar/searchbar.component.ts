@@ -12,6 +12,7 @@ export class SearchbarComponent implements OnInit {
   ngOnInit(): void {
     
       console.log("abc");
+     console.log("abc");
   }
 
 }
