@@ -32,6 +32,8 @@ export class UserlistComponent implements OnInit {
   }
 
   
+  
+  
   getAPIList(){
     this.http.get<any>('/api/users').subscribe(
       response => {
